@@ -113,11 +113,6 @@ img {
     Global settings end
 ========================= */
 
-
-
-
-
-
 /* =====================
     Header area start
 ======================= */
@@ -286,11 +281,6 @@ img {
     Header area end
 ===================== */
 
-
-
-
-
-
 /* =====================
     Section contents
 ======================= */
@@ -363,6 +353,7 @@ footer p a {
 /* =======================
     Section content end
 ========================= */
+
 #myVideo {
     position: fixed;
     right: 0;
@@ -378,3 +369,4 @@ footer p a {
     width: 100%;
     padding: 50px;
   }
+  
