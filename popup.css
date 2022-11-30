@@ -58,18 +58,10 @@
 .open-popup{
   visibility: visible;
   top: 350%;
+  right: 50%;
   transform: translate(-50%,-50%) scale(1);
 }
-.open-popup1{
-  visibility: visible;
-  top: 30%;
-  transform: translate(-50%,-50%) scale(1);
-}
-.open-popup2{
-  visibility: visible;
-  top: 30%;
-  transform: translate(-50%,-50%) scale(1);
-}
+
 .popup button{
   width: 50%;
   color: white;
