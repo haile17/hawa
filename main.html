@@ -24,7 +24,7 @@
                 <li type="submit" class="btn" onclick="openPopup2()">Features</li>
             </ul>
         </div>
-    
+      </div> 
     <div class="popup" id="popup">
       <img src="./img/photo_2022-11-30_11-40-03_thumbnail.png">
       <p> Hello, my name is Haile fikere Hassen. For the past 6 months i had been studying a software engineering program on alx-africa.througn these months i had been developing and taking my time on practicing and making short projects related to my prgram.
@@ -43,7 +43,7 @@
     }
   </script>  
   <div class="popup" id="popup1">
-    <p style="text-align: left;"> The aim of this project (Hawa) is providing enough information related to weather conditions for the society. Weather forecasting in general it’s  important. because they are used to protect life and property.Forecasts based on temperature and precipitation are important to agriculture, and therefore to traders within commodity markets.
+    <p style="text-align: left;"> The aim of this project <b>(Hawa)</b> is providing enough information related to weather conditions for the society. Weather forecasting in general it’s  important. because they are used to protect life and property.Forecasts based on temperature and precipitation are important to agriculture, and therefore to traders within commodity markets.
       We need weather forecasts to know what to wear,
        to plan our day and to prepare for natural hazards 
        that may lie ahead. However, weather forecasts 
@@ -68,33 +68,27 @@
       popup1.classList.remove("open-popup");
     }
   </script>
-  <div class="popup2" id="popup2">
+  <div class="popup" id="popup2">
       Features which must be included in the project:
       <ul>
         <li style="text-align: left;">Climate and Humidity Map:</li>
         <li style="text-align: left;">Predictions:</li>
-        <li style="text-align: left;">Drought Monitoring: </li>
+        <li style="text-align: left;">Drought Monitoring:</li>
       </ul>
-    <button type="button" onclick="closePopup2()"> Return</button>
+    <button type="button" onclick="closePopup2()">Return</button>
   </div> 
   <script>
     let popup2 = document.getElementById("popup2");
     function openPopup2(){
       popup2.classList.add("open-popup");
     }
-    function closePopup1(){
+    function closePopup2(){
       popup2.classList.remove("open-popup");
     }
   </script>
-  </div> 
+
   
-  <div>
-    <video autoplay muted loop id="myVideo">
-    <source src="mp.mp4" type="video/mp4">
-    </video>
-  </div>  
-  <div class="content">    
-    <p>update status will be posted soon</p>
-  </div>   
+    
+  
     </body>
 </html>

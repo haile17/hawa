@@ -13,7 +13,7 @@
   background: #fff;
   border-radius: 6px;
   position: absolute;
-  top: 0%;
+  top: 50%;
   left: 60%;
   transform: translate(-50%,-50%) scale(0.1);
   text-align: center;
@@ -21,7 +21,7 @@
   color: #333;
   visibility: hidden;
   transition: transform 0.4s, top 0.4s;
-}
+}  
 .popup img{
   width: 150px;
   margin-top: -50px;
@@ -32,7 +32,7 @@
   background: #fff;
   border-radius: 6px;
   position: absolute;
-  top: 100%;
+  top: 0;
   left: 50%;
   transform: translate(-50%,-50%) scale(0.1);
   text-align: center;
@@ -46,7 +46,7 @@
   background: #fff;
   border-radius: 6px;
   position: absolute;
-  top: 100%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%,-50%) scale(0.1);
   text-align: center;
@@ -59,7 +59,16 @@
   visibility: visible;
   top: 30%;
   transform: translate(-50%,-50%) scale(1);
-
+}
+.open-popup1{
+  visibility: visible;
+  top: 30%;
+  transform: translate(-50%,-50%) scale(1);
+}
+.open-popup2{
+  visibility: visible;
+  top: 30%;
+  transform: translate(-50%,-50%) scale(1);
 }
 .popup button{
   width: 50%;
