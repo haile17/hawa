@@ -20,14 +20,11 @@
             </div>
             <ul class="menu-items">
                 <li type="submit" class="btn" onclick="openPopup()">About me </li>
-                <li type="submit" class="btn" onclick="openPopup()">About project </li>
+                <li type="submit" class="btn" onclick="openPopup1()">About project </li>
                 <li type="submit" class="btn" onclick="openPopup()">Features</li>
                 <li class="explore-btn"><a href="./main.html">Explore the site</a></li>
             </ul>
         </div>
-    </div>
-    <div class="content">    
-            <p>update status will be posted soon</p>
     </div> 
     <div class="popup" id="popup">
       <p> Hello, my name is Haile fikere Hassen. For the past 6 months i had been studying a software engineering program on alx-africa.througn these months i had been developing and taking my time on practicing and making short projects related to my prgram.
@@ -56,21 +53,24 @@
       for taking life-saving timely action in face of impending natural hazards such as tropical cyclones, floods, etc.
       
       </p>
-    <button type="button" onclick="closePopup()"> return</button>
+    <button type="button" onclick="closePopup1()"> return</button>
   </div> 
   <script>
     let popup1 = document.getElementById("popup1");
-    function openPopup(){
+    function openPopup1(){
       popup1.classList.add("open-popup");
     }
-    function closePopup(){
+    function closePopup1(){
       popup1.classList.remove("open-popup");
     }
   </script>
+  <div class="content">    
+    <p>update status will be posted soon</p>
+</div>
   <div>
     <video autoplay muted loop id="myVideo">
     <source src="mp.mp4" type="video/mp4">
-  </video>
+    </video>
   </div>     
     </body>
 </html>
