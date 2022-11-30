@@ -13,8 +13,9 @@ body {
 }
 .popup{
   width: 400px;
-  background: #fff;
-  border-radius: 6px;
+  background: transparent;
+  border-color: aqua;
+  border-radius: 20px;
   position: absolute;
   top: 50%;
   left: 60%;
