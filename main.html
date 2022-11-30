@@ -21,7 +21,7 @@
             <ul class="menu-items">
                 <li type="submit" class="btn" onclick="openPopup()">About me </li>
                 <li type="submit" class="btn" onclick="openPopup1()">About project </li>
-                <li type="submit" class="btn" onclick="openPopup()">Features</li>
+                <li type="submit" class="btn" onclick="openPopup2()">Features</li>
                 <li class="explore-btn"><a href="./main.html">Explore the site</a></li>
             </ul>
         </div>
@@ -62,6 +62,24 @@
     }
     function closePopup1(){
       popup1.classList.remove("open-popup");
+    }
+  </script>
+   <div class="popup2" id="popup2">
+      Features which must be included in the project:<br>
+      <ul>
+        <li>Climate and Humidity Map:</li>
+        <li>Predictions:</li>
+        <li>Drought Monitoring: </li>
+      </ul>
+    <button type="button" onclick="closePopup2()"> return</button>
+  </div> 
+  <script>
+    let popup2 = document.getElementById("popup2");
+    function openPopup2(){
+      popup2.classList.add("open-popup");
+    }
+    function closePopup1(){
+      popup2.classList.remove("open-popup");
     }
   </script>
   <div class="content">    

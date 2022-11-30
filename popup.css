@@ -13,7 +13,7 @@
   background: #fff;
   border-radius: 6px;
   position: absolute;
-  top: 100%;
+  top: 0%;
   left: 50%;
   transform: translate(-50%,-50%) scale(0.1);
   text-align: center;
@@ -23,6 +23,20 @@
   transition: transform 0.4s, top 0.4s;
 }
 .popup1{
+  width: 400px;
+  background: #fff;
+  border-radius: 6px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0.1);
+  text-align: center;
+  padding: 0 30px 30px;
+  color: #333;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+.popup2{
   width: 400px;
   background: #fff;
   border-radius: 6px;
@@ -56,6 +70,19 @@
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 .popup1 button{
+  width: 100%;
+  color: white;
+  padding: 10px 0;
+  margin-top: 50px;
+  background: #24e8fa;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+.popup2 button{
   width: 100%;
   color: white;
   padding: 10px 0;
