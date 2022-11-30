@@ -22,7 +22,6 @@
                 <li type="submit" class="btn" onclick="openPopup()">About me </li>
                 <li type="submit" class="btn" onclick="openPopup1()">About project </li>
                 <li type="submit" class="btn" onclick="openPopup2()">Features</li>
-                <li class="explore-btn"><a href="./main.html">Explore the site</a></li>
             </ul>
         </div>
     
@@ -31,7 +30,7 @@
       <p> Hello, my name is Haile fikere Hassen. For the past 6 months i had been studying a software engineering program on alx-africa.througn these months i had been developing and taking my time on practicing and making short projects related to my prgram.
         Based on my corporate training on this field, i realized the importance of this software related technologies and the impacts on global industries.for my time on this program i currently developing a simple weather notifer app.
         </p>
-      <button type="button" onclick="closePopup()"> return</button>
+      <button type="button" onclick="closePopup()"> Return</button>
     </div> 
   <script>
     let popup = document.getElementById("popup");
@@ -43,18 +42,22 @@
       popup.classList.remove("open-popup");
     }
   </script>  
-  <div class="popup1" id="popup1">
-    <p> The aim of this project (Hawa) is providing enough information related to weather conditions for the society. Weather forecasting in general it’s  important. because they are used to protect life and property.Forecasts based on temperature and precipitation are important to agriculture, and therefore to traders within commodity markets.
-      We need weather forecasts to know what to wear, to plan our day and to prepare for natural hazards that may lie ahead. However, weather forecasts provide essential information for decision-making in many other areas:
-      
-      for safe transportation on land, by sea and in the air
-      for managing fresh water resources,
-      for sport, adventure and beach tourism,
-      for agriculture, building infrastructure and energy management,
-      for taking life-saving timely action in face of impending natural hazards such as tropical cyclones, floods, etc.
-      
+  <div class="popup" id="popup1">
+    <p style="text-align: left;"> The aim of this project (Hawa) is providing enough information related to weather conditions for the society. Weather forecasting in general it’s  important. because they are used to protect life and property.Forecasts based on temperature and precipitation are important to agriculture, and therefore to traders within commodity markets.
+      We need weather forecasts to know what to wear,
+       to plan our day and to prepare for natural hazards 
+       that may lie ahead. However, weather forecasts 
+       provide essential information for decision-making
+        in many other areas:
+      <ul>
+      <li style="text-align: left;">for safe transportation on land, by sea and in the air</li>
+      <li style="text-align: left;">for managing fresh water resources,</li>
+      <li style="text-align: left;">for sport, adventure and beach tourism,</li>
+      <li style="text-align: left;">for agriculture, building infrastructure and energy management,</li>
+      <li style="text-align: left;">for taking life-saving timely action in face of impending natural hazards such as tropical cyclones, floods, etc.</li>
+      </ul>
       </p>
-    <button type="button" onclick="closePopup1()"> return</button>
+    <button type="button" onclick="closePopup1()"> Return</button>
   </div> 
   <script>
     let popup1 = document.getElementById("popup1");
@@ -66,13 +69,13 @@
     }
   </script>
   <div class="popup2" id="popup2">
-      Features which must be included in the project:<br>
+      Features which must be included in the project:
       <ul>
-        <li>Climate and Humidity Map:</li>
-        <li>Predictions:</li>
-        <li>Drought Monitoring: </li>
+        <li style="text-align: left;">Climate and Humidity Map:</li>
+        <li style="text-align: left;">Predictions:</li>
+        <li style="text-align: left;">Drought Monitoring: </li>
       </ul>
-    <button type="button" onclick="closePopup2()"> return</button>
+    <button type="button" onclick="closePopup2()"> Return</button>
   </div> 
   <script>
     let popup2 = document.getElementById("popup2");
