@@ -88,19 +88,7 @@
   </script>
   </div><hr>
    <!--main part -->
-   <script src="app.js"></script>
-   <script src="calendar.js"></script>
-   <script src="weather.js"></script>
-   <script>
-     function showCalendar() {
-       document.getElementById("cal").style.cssText = "display: block";
-       document.getElementById("clickonme").style.cssText = "display: none";
-     }
-     function showWeather() {
-       document.getElementById("weat").style.cssText = "display: block";
-       document.getElementById("clickonme").style.cssText = "display: none";
-     }
-   </script>
+   
    
    <div class="watch" >
     <!-- clock -->
@@ -123,7 +111,48 @@
     ></i>
   <h6 id="clickonme" >Click on Calendar and Weather Icon</h6>
    </div>
+    <div class="clicked">
+      <div id="cal" class="card calendar2 floating">
+        <div class="calendar">
+          <div class="month">
+            <i class="fa fa-angle-left prev"></i>
+            <div class="date">
+              <h1></h1>
+              <p></p>
+            </div>
+            <i class="fa fa-angle-right next"></i>
+          </div>
+          <div class="weekdays">
+            <div>Sun</div>
+            <div>Mon</div>
+            <div>Tue</div>
+            <div>Wed</div>
+            <div>Thu</div>
+            <div>Fri</div>
+            <div>Sat</div>
+          </div>
+          <div class="days"></div>
+        </div>
+        
+      </div>
+    </div>
+    <script src="./app.js"></script>
+    <script src="./calendar.js"></script>
+    <script src="./weather.js"></script>
+    <script>
+      function showCalendar() {
+        document.getElementById("cal").style.cssText = "display: block";
+        document.getElementById("clickonme").style.cssText = "display: none";
+         
+      }
+      function showWeather() {
+        document.getElementById("weat").style.cssText = "display: block";
+        document.getElementById("clickonme").style.cssText = "display: none";
 
+      }    
+    </script>
+    
+  
     
   
 

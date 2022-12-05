@@ -171,8 +171,166 @@ p {
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 .watch h6 {
-  color: aqua;
+  color: rgb(226, 130, 57);
   font-size: 10px;
 }
+#cal {
+  /* background-color: yellow; */
+  align-items: center;
+  height: 420px;
+  width: 400px;
+  justify-content: center;
+  display: block;
+}
+.clicked {
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  border-radius: 15px;
+  text-align: center;
+}
+.month {
+  width: 100%;
+  height: 8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+  border-radius: 5px;
+}
+.weekdays {
+  width: 100%;
+  height: 40px;
+  padding: 0 6.4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.month i {
+  
+  font-size: 30px;
+  cursor: pointer;
+}
+.month h1 {
+  font-size: 35px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 10px;
+}
+.month p {
+  font-size: 13px;
+}
+.calendar2 {
+  background: url(img/calendar.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border-radius: 15px;
+  width: 100%;
+}
+.weekdays div {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 1.6px;
+  width: calc(100% / 7.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#cal {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  display: none;
+}
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.days div {
+  margin: 10px;
+  width: calc(100% / 12);
+}
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+.today {
+  font-weight: bold;
+}
+.days div:hover {
+  cursor: default;
+}
+@media screen and (max-width: 560px) {
+  .clicked {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .card {
+    margin: 30px;
+  }
+  .card,
+  .weather-back {
+    width: auto;
+    height: auto;
+  }
+  #clickonme {
+    font-size: medium;
+    text-align: center;
+  }
+  .calendar2 {
+    margin: 30px;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 992px) {
+  .clicked {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .month h1 {
+    font-size: 100%;
+  }
+}
+@media screen and (max-width: 420px) {
+  #cal {
+    width: 100%;
+  }
+}
 
+@media screen and (max-width: 380px) {
+  .days div {
+    margin: 10px;
+    width: calc(100% / 14);
+  }
+  .calendar2 {
+    border-radius: 0px;
+  }
+}
+.floating { 
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 
+  margin-top: 5px;
+}
+
+@keyframes floating {
+  0% { transform: translate(0,  0px); }
+  50%  { transform: translate(0, 15px); }
+  100%   { transform: translate(0, -0px); }   
+}
