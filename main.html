@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-     
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+   
     <!-- custom stylesheet -->
     <link rel="stylesheet" href="popup.css">
     
@@ -23,7 +23,7 @@
                 <li type="submit" class="btn" onclick="openPopup1()">About project </li>
                 <li type="submit" class="btn" onclick="openPopup2()">Features</li>
             </ul>
-          </div><hr>
+          
        
     <div class="popup" id="popup">
       <img src="./img/photo_2022-11-30_11-40-03_thumbnail.png">
@@ -86,9 +86,22 @@
       popup2.classList.remove("open-popup");
     }
   </script>
-  
+  </div><hr>
    <!--main part -->
-
+   <script src="app.js"></script>
+   <script src="calendar.js"></script>
+   <script src="weather.js"></script>
+   <script>
+     function showCalendar() {
+       document.getElementById("cal").style.cssText = "display: block";
+       document.getElementById("clickonme").style.cssText = "display: none";
+     }
+     function showWeather() {
+       document.getElementById("weat").style.cssText = "display: block";
+       document.getElementById("clickonme").style.cssText = "display: none";
+     }
+   </script>
+   
    <div class="watch" >
     <!-- clock -->
     <div class="container1">
@@ -108,7 +121,10 @@
       style="font-size: 48px"
       onclick="showWeather()"
     ></i>
-  </div>
+  <h6 id="clickonme" >Click on Calendar and Weather Icon</h6>
+   </div>
+
+    
   
 
   </body>
