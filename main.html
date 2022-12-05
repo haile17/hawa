@@ -134,7 +134,8 @@
           <div class="days"></div>
         </div>
         <button id="rem" type="button" onclick="closePopup3()">Return</button>
-        <div id="weat" class="card weather-back floating">
+      </div>
+      <div id="weat" class="card weather-back floating">
           <h1>Weather</h1>
           <input type="text" class="inputTxt" placeholder="City"/>
           <br/>
@@ -154,10 +155,9 @@
       }
       function showWeather() {
         document.getElementById("weat").style.cssText = "display: block";
-       document.getElementById("clickonme").style.cssText = "display: none";
+        document.getElementById("clickonme").style.cssText = "display: none";
       }   
       function closePopup3() {
-        document.getElementById("clickonme").style.cssText = "display: block";
         document.getElementById("cal").remove();
         document.location.reload();
       }  
