@@ -1,6 +1,33 @@
 body {
-  background-color: antiquewhite;
+
 }
+.navbar1 {
+    
+  position: relative;
+  margin: 0 auto;
+  padding: 1.2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1300px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.navbar1 .logo a {
+  color: #41435a;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.navbar1 .menu-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
 .btn{
   padding: 10px 60px;
   background: #fff;
@@ -21,7 +48,7 @@ body {
   left: 60%;
   transform: translate(-50%,-50%) scale(0.1);
   text-align: center;
-  padding: 0 30px 30px;
+  padding: 0 30px 30px 30px;
   color: #333;
   visibility: hidden;
   transition: transform 0.4s, top 0.4s;
@@ -30,6 +57,10 @@ body {
   width: 150px;
   margin-top: -50px;
   border-radius: 50%;
+}
+.popup .p{
+  text-align: justify;
+  padding: 30px 30px 30px 30px;
 }
 .popup1{
   width: 400px;
@@ -40,10 +71,15 @@ body {
   left: 50%;
   transform: translate(-50%,-50%) scale(0.1);
   text-align: center;
-  padding: 0 30px 30px;
+
   color: #333;
   visibility: hidden;
   transition: transform 0.4s, top 0.4s;
+}
+p {
+  text-align: justify;
+  padding-top: 30px;
+
 }
 .popup2{
   width: 400px;
@@ -106,3 +142,25 @@ body {
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 /*---------------------------------------------------------------*/
+
+.watch {
+  margin-left: auto;
+  margin-right: auto;
+  height: 235px;
+  width: 252px;
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 15px;
+  background-size: 300px 250px;
+  background-image: url(img/watch.gif);
+  background-repeat: no-repeat;
+  padding-top: 40px;
+  border: 1px solid black;
+}
+.watch i {
+  padding: 15px;
+  margin-top: 50px;
+  color: rgb(0, 0, 0);
+}
