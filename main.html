@@ -109,7 +109,7 @@
       style="font-size: 48px"
       onclick="showWeather()"
     ></i>
-  <h6 id="clickonme" >Click on Calendar and Weather Icon</h6>
+  <h6 id="clickonme">Click on Calendar and Weather Icon</h6>
    </div>
     <div class="clicked">
       <div id="cal" class="card calendar2 floating">
@@ -133,7 +133,7 @@
           </div>
           <div class="days"></div>
         </div>
-        
+        <button id="rem" type="button" onclick="closePopup3()">Return</button>
       </div>
     </div>
     <script src="./app.js"></script>
@@ -143,15 +143,19 @@
       function showCalendar() {
         document.getElementById("cal").style.cssText = "display: block";
         document.getElementById("clickonme").style.cssText = "display: none";
-         
       }
       function showWeather() {
         document.getElementById("weat").style.cssText = "display: block";
-        document.getElementById("clickonme").style.cssText = "display: none";
-
-      }    
+       document.getElementById("clickonme").style.cssText = "display: none";
+      }   
+      function closePopup3() {
+        document.getElementById("clickonme").style.cssText = "display: block";
+        document.getElementById("cal").remove();
+        document.location.reload();
+      }  
     </script>
     
+   
   
     
   
