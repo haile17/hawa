@@ -4,15 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <!-- custom stylesheet -->
     <link rel="stylesheet" href="popup.css">
     <script src="map.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkZ0fY68MFT99Q7nLm2765AocLDRf1S6s&sensor=true"></script>
-
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkZ0fY68MFT99Q7nLm2765AocLDRf1S6s&callback=myMap"></script>
     <title>HAWA</title>
 </head>
     <body>
@@ -171,8 +170,10 @@
     <div class="grid-item item3">3</div>  
     <div class="grid-item item4">4</div>
     <div class="grid-item item5">
-      <h1>Trial</h1>
-      <div id="map"></div>
+      
+      <div id="googleMap">
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkZ0fY68MFT99Q7nLm2765AocLDRf1S6s&callback=myMap"></script>
+      </div>
     </div>
   </div>
   </body>

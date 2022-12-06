@@ -490,8 +490,9 @@ ul {
 
 
 /* map */ 
-#map {
-  height: 200%;
+#googleMap {
+  margin:0px 0px 0px 0px;
+  height: 470px;
   width: 100%;
 
 }
