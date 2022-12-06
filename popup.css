@@ -1,10 +1,9 @@
-body {
-
-}
 .navbar1 {
     
   position: relative;
   margin: 0 auto;
+  height: 30px;
+  margin-bottom: 10px;
   padding: 1.2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -26,6 +25,12 @@ body {
   display: -ms-flexbox;
   display: flex;
   list-style: none;
+  padding: 15px;
+  margin-top: 5px;
+
+}
+.navbar1 .menu-items i{
+  row-gap: 20px;
 }
 
 .btn{
@@ -142,7 +147,44 @@ p {
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
 }
 /*---------------------------------------------------------------*/
+.grid-container {
+  display: grid;
+  gap: 10px;
+  background-image: url(./img/bg-image.jpg);
+  padding: 10px;
+  border-radius: 20px;
+}
 
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px;
+  font-size: 30px;
+  border-radius: 20px;
+}
+
+.item1 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  height: 300px;
+  background-image: url(./img/Cold\ 02.jpg);
+  background: rgba(0, 0, 0, 0.5);
+
+}
+
+.item2 {
+  grid-column: 3;
+  grid-row: 1 / span 2;
+}
+.item3{
+  height: 300px;
+}
+
+.item5 {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+  height: 500px;
+}
 .watch {
   float: right;
   margin-left: auto;
@@ -171,7 +213,7 @@ p {
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 .watch h6 {
-  color: rgb(226, 130, 57);
+  color: rgb(13, 12, 11);
   font-size: 10px;
 }
 #cal {
@@ -443,4 +485,13 @@ ul {
   0% { transform: translate(0,  0px); }
   50%  { transform: translate(0, 15px); }
   100%   { transform: translate(0, -0px); }   
+}
+
+
+
+/* map */ 
+#map {
+  height: 200%;
+  width: 100%;
+
 }

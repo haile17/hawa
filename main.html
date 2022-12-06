@@ -7,22 +7,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-   
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <!-- custom stylesheet -->
     <link rel="stylesheet" href="popup.css">
-    
+    <script src="map.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkZ0fY68MFT99Q7nLm2765AocLDRf1S6s&sensor=true"></script>
+
     <title>HAWA</title>
 </head>
     <body>
     <div class="navbar1">
             <div class="logo">
                 <a href="index.html">Hawa</a>
+                
             </div>
             <ul class="menu-items">
                 <li type="submit" class="btn" onclick="openPopup()">About me </li>
                 <li type="submit" class="btn" onclick="openPopup1()">About project </li>
                 <li type="submit" class="btn" onclick="openPopup2()">Features</li>
-            </ul>
+            
           
        
     <div class="popup" id="popup">
@@ -87,80 +90,90 @@
     }
   </script>
   </div><hr>
+
    <!--main part -->
    
-   
-   <div class="watch" id="watch">
-    <!-- clock -->
-    <div class="container1">
-      <div class="clock">
-        <h1 id="clock" class="">Loading...</h1>
+  <div class="grid-container">
+    <div class="grid-item item1">1</div>
+    <div class="grid-item item2"><div class="watch">
+      <!-- clock -->
+      <div class="container1">
+        <div class="clock">
+          <h1 id="clock" class="">Loading...</h1>
+        </div>
       </div>
-    </div>
-    <!-- calendar -->
-    <i
-      class="fa fa-calendar icons floating"
-      style="font-size: 48px"
-      onclick="showCalendar()"
-    ></i>
-    <!-- weather -->
-    <i
-      class="fa fa-cloud icons floating"
-      style="font-size: 48px"
-      onclick="showWeather()"
-    ></i>
-  <h6 id="clickonme">Click on Calendar and Weather Icon</h6>
-   </div>
-    <div class="clicked">
-      <div id="cal" class="card calendar2 floating">
-        <div class="calendar">
-          <div class="month">
-            <i class="fa fa-angle-left prev"></i>
-            <div class="date">
-              <h1></h1>
-              <p></p>
+      <!-- calendar -->
+      <i
+        class="fa fa-calendar icons floating"
+        style="font-size: 48px"
+        onclick="showCalendar()"
+      ></i>
+      <!-- weather -->
+      <i
+        class="fa fa-cloud icons floating"
+        style="font-size: 48px"
+        onclick="showWeather()"
+      ></i>
+    <h6 id="clickonme">Click on Calendar and Weather Icon</h6>
+     
+      <div class="clicked">
+        <div id="cal" class="card calendar2 floating">
+          <div class="calendar">
+            <div class="month">
+              <i class="fa fa-angle-left prev"></i>
+              <div class="date">
+                <h1></h1>
+                <p></p>
+              </div>
+              <i class="fa fa-angle-right next"></i>
             </div>
-            <i class="fa fa-angle-right next"></i>
+            <div class="weekdays">
+              <div>Sun</div>
+              <div>Mon</div>
+              <div>Tue</div>
+              <div>Wed</div>
+              <div>Thu</div>
+              <div>Fri</div>
+              <div>Sat</div>
+            </div>
+            <div class="days"></div>
           </div>
-          <div class="weekdays">
-            <div>Sun</div>
-            <div>Mon</div>
-            <div>Tue</div>
-            <div>Wed</div>
-            <div>Thu</div>
-            <div>Fri</div>
-            <div>Sat</div>
+          <button id="rem" type="button" onclick="closePopup3()">Return</button>
+        </div>
+        <div id="weat" class="card weather-back floating">
+            <h1>Weather</h1>
+            <input type="text" class="inputTxt" placeholder="City"/>
+            <br/>
+            <input type="submit" value="Submit" class="btn1">
+    
+            <div class="show-details"></div>
           </div>
-          <div class="days"></div>
         </div>
-        <button id="rem" type="button" onclick="closePopup3()">Return</button>
-      </div>
-      <div id="weat" class="card weather-back floating">
-          <h1>Weather</h1>
-          <input type="text" class="inputTxt" placeholder="City"/>
-          <br/>
-          <input type="submit" value="Submit" class="btn1">
-  
-          <div class="show-details"></div>
-        </div>
-      </div>
+       </div>
+      
+      <script src="app.js"></script>
+      <script src="calendar.js"></script>
+      <script src="weather.js"></script>
+      <script>
+        function showCalendar() {
+          document.getElementById("cal").style.cssText = "display: block";
+          document.getElementById("clickonme").style.cssText = "display: none";
+        }
+        function showWeather() {
+          document.getElementById("weat").style.cssText = "display: block";
+          document.getElementById("clickonme").style.cssText = "display: none";
+        }   
+        function closePopup3() {
+          document.getElementById("cal").remove();
+          document.location.reload();
+        }  
+      </script></div>
+    <div class="grid-item item3">3</div>  
+    <div class="grid-item item4">4</div>
+    <div class="grid-item item5">
+      <h1>Trial</h1>
+      <div id="map"></div>
     </div>
-    <script src="./app.js"></script>
-    <script src="./calendar.js"></script>
-    <script src="./weather.js"></script>
-    <script>
-      function showCalendar() {
-        document.getElementById("cal").style.cssText = "display: block";
-        document.getElementById("clickonme").style.cssText = "display: none";
-      }
-      function showWeather() {
-        document.getElementById("weat").style.cssText = "display: block";
-        document.getElementById("clickonme").style.cssText = "display: none";
-      }   
-      function closePopup3() {
-        document.getElementById("cal").remove();
-        document.location.reload();
-      }  
-    </script>
+  </div>
   </body>
 </html>
