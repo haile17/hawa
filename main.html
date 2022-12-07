@@ -88,87 +88,112 @@
       popup2.classList.remove("open-popup");
     }
   </script>
-  </div><hr>
+  </div>
 
    <!--main part -->
    
   <div class="grid-container">
-    <div class="grid-item item1">1</div>
-    <div class="grid-item item2"><div class="watch">
-      <!-- clock -->
-      <div class="container1">
-        <div class="clock">
-          <h1 id="clock" class="">Loading...</h1>
-        </div>
+    <div class="grid-item item1">
+      <div class="future-forecast">
+      <div class="today" id="current-temp">
+          <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+          <div class="other">
+              <div class="day">Monday</div>
+              <div class="temp">Night - 25.6&#176; C</div>
+              <div class="temp">Day - 35.6&#176; C</div>
+          </div>
       </div>
-      <!-- calendar -->
-      <i
-        class="fa fa-calendar icons floating"
-        style="font-size: 48px"
-        onclick="showCalendar()"
-      ></i>
-      <!-- weather -->
-      <i
-        class="fa fa-cloud icons floating"
-        style="font-size: 48px"
-        onclick="showWeather()"
-      ></i>
-    <h6 id="clickonme">Click on Calendar and Weather Icon</h6>
-     
-      <div class="clicked">
-        <div id="cal" class="card calendar2 floating">
-          <div class="calendar">
-            <div class="month">
-              <i class="fa fa-angle-left prev"></i>
-              <div class="date">
-                <h1></h1>
-                <p></p>
-              </div>
-              <i class="fa fa-angle-right next"></i>
-            </div>
-            <div class="weekdays">
-              <div>Sun</div>
-              <div>Mon</div>
-              <div>Tue</div>
-              <div>Wed</div>
-              <div>Thu</div>
-              <div>Fri</div>
-              <div>Sat</div>
-            </div>
-            <div class="days"></div>
+
+      <div class="weather-forecast" id="weather-forecast">
+          <div class="weather-forecast-item">
+              <div class="day">Tue</div>
+              <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+              <div class="temp">Night - 25.6&#176; C</div>
+              <div class="temp">Day - 35.6&#176; C</div>
           </div>
-          <button id="rem" type="button" onclick="closePopup3()">Return</button>
-        </div>
-        <div id="weat" class="card weather-back floating">
-            <h1>Weather</h1>
-            <input type="text" class="inputTxt" placeholder="City"/>
-            <br/>
-            <input type="submit" value="Submit" class="btn1">
-    
-            <div class="show-details"></div>
+          <div class="weather-forecast-item">
+              <div class="day">Wed</div>
+              <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+              <div class="temp">Night - 25.6&#176; C</div>
+              <div class="temp">Day - 35.6&#176; C</div>
+          </div>
+          <div class="weather-forecast-item">
+              <div class="day">Thur</div>
+              <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+              <div class="temp">Night - 25.6&#176; C</div>
+              <div class="temp">Day - 35.6&#176; C</div>
+          </div>
+          <div class="weather-forecast-item">
+              <div class="day">Fri</div>
+              <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+              <div class="temp">Night - 25.6&#176; C</div>
+              <div class="temp">Day - 35.6&#176; C</div>
+          </div>
+          <div class="weather-forecast-item">
+              <div class="day">Sat</div>
+              <img src="http://openweathermap.org/img/wn/10d@2x.png" alt="weather icon" class="w-icon">
+              <div class="temp">Night - 25.6&#176; C</div>
+              <div class="temp">Day - 35.6&#176; C</div>
+          </div>
+
+      </div>
+  </div>
+  
+</div>
+    <div class="grid-item item2">
+      <div class="watch">
+        <!-- clock -->
+        <div class="container">
+          <div class="clock">
+            <h1 id="clock" class="">Loading...</h1>
           </div>
         </div>
-       </div>
-      
+       
+        
+      </div>
       <script src="app.js"></script>
-      <script src="calendar.js"></script>
-      <script src="weather.js"></script>
-      <script>
-        function showCalendar() {
-          document.getElementById("cal").style.cssText = "display: block";
-          document.getElementById("clickonme").style.cssText = "display: none";
-        }
-        function showWeather() {
-          document.getElementById("weat").style.cssText = "display: block";
-          document.getElementById("clickonme").style.cssText = "display: none";
-        }   
-        function closePopup3() {
-          document.getElementById("cal").remove();
-          document.location.reload();
-        }  
-      </script></div>
-    <div class="grid-item item3">3</div>  
-    <div class="grid-item item4">4</div>
+      <div id="weat" class="card weather-back floating">
+        <h1>Weather</h1>
+        <input type="text" class="inputTxt" placeholder="City"/>
+        <br/>
+        <input type="submit" value="Submit" class="btn1">
+
+        <div class="show-details"></div>
+        <script src="weather.js"></script>
+      </div>
+      
+ </div>
+    <div class="grid-item item3"> 
+      <div class="container2">
+      <div class="current-info">
+
+          <div class="date-container">
+              <div class="time" id="time">
+                  12:30 <span id="am-pm">PM</span>
+              </div>
+              <div class="date" id="date">
+                  Monday, 25 May
+              </div>
+
+              <div class="others" id="current-weather-items">
+                  
+                  
+              </div>
+          </div>
+
+          <div class="place-container">
+              <div class="time-zone" id="time-zone">Asia/Kolkata</div>
+              <div id="country" class="country">IN</div>
+          </div>
+      </div>
+
+      
+  </div>
+  
+</div>  
+    <div class="grid-item item4">
+      
+    </div>
     <div class="grid-item item5">
       
       <div id="googleMap">
@@ -176,5 +201,7 @@
       </div>
     </div>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="grid3.js"> </script>
   </body>
 </html>

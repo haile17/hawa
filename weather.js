@@ -1,5 +1,5 @@
 const inputTxt = document.querySelector(".inputTxt");
-var button = document.querySelector(".btn");
+var button = document.querySelector(".btn1");
 const showData = document.querySelector(".show-details");
 const API_key = "38f30d7e5e868ff6a8bc084515f5a5d3";
 
