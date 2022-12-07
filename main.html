@@ -10,6 +10,8 @@
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <!-- custom stylesheet -->
     <link rel="stylesheet" href="popup.css">
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+
     <script src="map.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAkZ0fY68MFT99Q7nLm2765AocLDRf1S6s&callback=myMap"></script>
     <title>HAWA</title>
@@ -192,7 +194,9 @@
   
 </div>  
     <div class="grid-item item4">
-      
+      <div id="windy"></div>
+      <script src="https://api.windy.com/assets/map-forecast/libBoot.js"></script>
+      <script src="windy.js"></script>
     </div>
     <div class="grid-item item5">
       
