@@ -6,7 +6,7 @@ const options = {
 };
 
 windyInit(options, windyAPI => {
-    const { picker, utils, broadcast, store } = windyAPI;
+    const { picker} = windyAPI;
 
     picker.on('pickerOpened', ({ lat, lon, values, overlay }) => {
         // ->  [ U,V, ], 'wind'
